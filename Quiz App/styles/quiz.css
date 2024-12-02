@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #15616d;
+}
+
+.game-title {
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.game-title div {
+  font-size: 25px;
+  background-color: #ede1e6;
+  width: 600px;
+  padding: 10px 10px;
+  margin: 30px auto 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.game-title h1 {
+  color: #ede1e6;
+  font-size: 40px;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+  width: 600px;
+  margin: 0px auto 0;
+}
+
+.container {
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.next-button {
+  background-color: #ede1e6;
+  margin: 0px auto 0;
+  padding: 5px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.25s;
+  display: none;
+}
+
+.container button:hover:not([disabled]) {
+  background: black;
+  color: #ede1e6;
+}
+
+.container button:disabled {
+  cursor: no-drop;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0px auto 0;
+  align-items: center;
+}
+
+.answers button {
+  width: 90%;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+  background-color: #ede1e6;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
